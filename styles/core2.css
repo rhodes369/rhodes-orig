@@ -1,0 +1,516 @@
+@charset "utf-8";
+/* CORE STYLES */
+
+html, body {
+	margin:0; padding:0;
+	height:100%;
+	background-color:#cacebc;}
+#wrapper {
+	margin:0; padding:0;
+	width:auto;
+	height:auto;    
+	min-height:100%;
+	background-color:#cacebc;}
+
+/* TYPE */
+h1, h1 a:link, h1 a:visited, h1 a:hover {
+	font-family:"Times New Roman", Times, serif;
+	font-size:30px;
+	font-weight:normal;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:6px;
+	color:#414042;}
+h1 a:hover {color:#636e43;}
+h2, h3, h4, p, tr, span {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#414042;}
+h2 {
+	margin:8px 0 4px 0;
+	font-size:18px;
+	font-weight:normal;
+	text-transform:uppercase;
+	letter-spacing:4;}
+h3 {
+	margin:8px 0 4px 0;
+	font-size:14px;
+	font-weight:bold;}
+p {
+	margin:2px 0 16px 0;
+	font-size:12px;
+	line-height:18px;}
+a:link, a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:underline;
+	color:#636e43;}
+a:hover {
+	text-decoration:none;
+	color:#414042;}
+tr {
+	font-size:12px;
+	text-align:center;}
+
+/* HEADER */
+#head {
+	margin:0; padding:0;
+	width:auto;
+	height:137px;
+	background:#dee0d5 url(../images/internal-head.jpg) no-repeat top left;}
+
+/* LOGO LINK */
+h1#logo {margin:0; padding:0; width:350px; height:98px;}
+#logo span {margin:0; padding:0; background-image:url(../images/internal-logo.jpg); background-repeat:no-repeat; width:349px; height:98px; position:absolute;}
+
+/* TAG */
+#tag {
+	width:100%;
+	height:112px;
+	float:right;
+	text-align:center;
+	padding:0px; margin:-98px 0 0 0;}
+#tag p {
+	margin:0 0 0 350px; padding:34px 0 0 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:22px;
+	font-style:italic;
+	color:#58595b;}
+
+/* LINKS */
+ul#links {
+	margin:0;
+	padding:0;
+	width:100%;
+	max-width:1600px;
+	text-align:right;
+	float:right;
+	list-style:none;
+	background-color:#979d82;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+	 -moz-opacity:70;
+	 -khtml-opacity: 0.7;}
+ul#links li {  
+	float:right;
+  	position:relative; /* Important! Without this the lists will be positioned to the page, not it's parent. */
+  	width:auto;
+	line-height:25px;}
+ul#links li a:link, ul#links li a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#f5f5f4;
+	text-transform:uppercase;
+	text-decoration:none;
+	width:auto;
+	margin:0;
+	padding:5px 20px;}
+ul#links li a:hover {
+	color:white;
+	background-color:#5d6543;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	 -moz-opacity:0.5;
+	 -khtml-opacity:0.5;}
+	 
+/* DROPDOWNS */
+ul#links li ul {
+  	display:none;
+  	list-style:none;
+  	position:absolute; 
+  	top:1em; /* IE fix - probably older versions */
+  	left:0;
+  	width:140px;
+  	margin:0;
+  	padding:0;
+  	background-color:#979d82;
+  	filter:alpha(opacity=90);/* declaring opacity here overwrites parent opacity */
+  	-moz-opacity:0.9;
+  	-khtml-opacity: 0.9;
+  	opacity:.9;
+	z-index:100;}
+/* Fix all browsers but IE (...says suckerfish tutorial, advising auto on both elements, yet that broke IE7) */
+ul#links li > ul {top:25px; left:0;}
+	
+ul#links li:hover ul, ul#links li.over ul {display:block;}
+
+ul#links li ul li {
+  	margin:0;
+  	padding:0;
+	text-align:left;
+	line-height:21px;
+	float:none;}
+ul#links ul li a:link, ul#links ul li a:visited {
+	width:100px;
+	display:inline-block;
+	padding:4px 20px;}
+ul#links ul li a:hover {
+	color:#414042;
+	background-color:white;
+  	filter:alpha(opacity=90);/* declaring opacity here overwrites parent opacity */
+  	-moz-opacity:0.9;
+  	-khtml-opacity: 0.9;
+  	opacity:.9;}
+
+/* BREADCRUMB */
+ul#breadcrumb {
+	margin:0; padding:0 0 0 10px;
+	list-style:none;
+	background:url(../images/breadcrumb-back.jpg) top left repeat-y;
+	height:20px;
+	width:auto;}
+ul#breadcrumb li {line-height:20px; display:inline;}
+ul#breadcrumb li, ul#breadcrumb li a:link, ul#breadcrumb li a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#808285;}
+ul#breadcrumb li a:link, ul#breadcrumb li a:visited {padding:5px 4px;}
+ul#breadcrumb li a:hover {
+	color:#414042;
+	text-decoration:none;}
+
+/* ANCHOR LINKS */
+ul#anchors {
+	list-style:none;
+	margin:0 0 40px 0; padding:0;}
+ul#anchors li {
+	margin:0; padding:0;
+	display:inline;}
+ul#anchors li, ul#anchors li a:link, ul#anchors li a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style:italic;
+	text-transform:uppercase;
+	color:#636466;}
+ul#anchors li a:link, ul#anchors li a:visited {
+	padding:4px 10px;}
+ul#anchors li a:hover {
+	text-decoration:none;
+	color:#414042;}
+	 
+/* CONTENT */
+#content-copy, #content, #content-thumbs {
+	padding:0;
+	width:auto;
+	height:auto;
+	padding-bottom:26px;
+	overflow:hidden;}
+#content-copy {
+	margin:40px 0 0 0px;
+	max-width:1000px;}
+#content-thumbs {
+	margin:40px 0 0 80px;
+	width:auto;}
+#content {
+	width:1000px;
+	margin:40px 0 0 20px;}
+	
+/* CONTENT - PORTFOLIO */
+#content-left, #content-right {
+	height:auto;
+	padding:0;
+	overflow:hidden;
+	padding-bottom:26px;}
+#content-left {
+	margin:20px 0px 10px 0px;
+	width:310px;
+	float:left;} 
+#content-right {
+	margin:0px 10px 10px 0;
+	width:760px;
+	margin:0 auto;}
+
+#content-right-center {
+	width:760px;
+	margin:0 auto;
+	position:relative;}
+
+/* IMAGE/LINK TEXT */ 
+a:link span, a:visited span {
+	margin:2px 0 0 0;
+	padding:0;
+	font-size:11px;
+	text-align:center;
+	text-decoration:none;
+	display:block;
+	color:#414042;}
+a:hover span {text-decoration:underline; color:#636e43;}
+	
+/* CLASSES */
+.caps {text-transform:uppercase;}
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+img.left {margin:2px 20px 10px 0; border:1px solid #414042;}
+img.right {margin:2px 0px 10px 20px; border:1px solid #414042;}
+.hide {display:none;}
+.top {margin-left:80px; font-style:italic;}
+.list {
+	margin:0 0 10px 10px;
+	padding:0;
+	list-style:none;}
+.list li {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#414042;
+	font-size:11px;
+	text-transform:uppercase;
+	line-height:16px;
+	padding:4px 0;
+	margin:4px 10px;}
+
+/* PORTFOLIO AND STONE DETAILS  +  ABOUT, CONTACT AND SUSTAINABILITY CONTENT */
+#content-left h1 {margin-left:40px;}
+#content-left h2 {margin:4px 0 16px 40px;}
+#content-copy h1, #content-copy ul, #content-copy p, #content-copy img.left, #content-copy table, #seattlemap {margin-left:80px;}
+#content-left h3, #content-copy h3, .description h3 {
+	margin:12px 0 4px 0px;
+	padding:4px 0 4px 47px;
+	font-weight:normal; 
+	font-size:11px;
+	text-transform:uppercase;
+	color:#e5e6de;
+	background:url(../images/details-fade.jpg) top left repeat-y;}
+#content-copy h3 {padding-left:70px; font-size:13px; letter-spacing:2px;}
+#content-left h4 {margin:2px 0 2px 40px;}
+#content-left h4, #content-right h4 {
+	font-size:14px;
+	font-weight:normal;}
+#content-right h4 {margin:-4px 0 2px 5px; padding:0;}
+#content-left p {
+	margin:2px 0 16px 0px;
+	padding:0 0 0 47px;
+	color:#414042;
+	line-height:16px;
+	font-size:11px;}
+.description p {
+	margin:2px 0 16px 25px;
+	padding:0;
+	font-size:12px;
+	color:#414042;
+	line-height:18px;}
+.details {margin:20px 0 0 0;}
+.description {
+	clear:both;
+	width:700px;}
+	
+/* ABOUT PAGE PHOTOS */	
+#mockups, #inspection {
+	float:right;
+	width:300px;
+	height:auto;
+	margin:2px 0px 10px 20px;
+	padding:0;
+	clear:both;
+  	position:relative;
+  	display:block;}
+#mockups img, #inspection img {border:1px solid #414042;}
+.caption {
+  	padding:0;
+  	margin:0 0 0 1px;
+  	position:absolute;
+  	left:0;
+  	bottom:10px;
+	height:40px;
+  	width:300px;
+  	background-color: rgba(0,0,0,.5);
+  	opacity:50;
+	filter:alpha(opacity=50);
+  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000);}
+.caption a:link, .caption a:visited {
+	font-size:14px; 
+	color:#f5f5f4;
+	margin:0; 
+	padding:10px 0 0 0;
+	width:100%;
+	height:30px;
+	display:block;
+	text-decoration:none;
+	text-align:center;}
+.caption a:hover {
+	color:white;
+  	background-color: rgba(0,0,0,1);
+  	opacity:100;
+	filter:alpha(opacity=100);
+  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000);}
+	
+/* PORTFOLIO NAVIGATION */
+.expanded, .collapsed {color:#979e7d;}
+.expanded {background:url(../images/collapse.gif) no-repeat 15px 50%; border-bottom:1px solid #979e7d;}
+.collapsed {background:url(../images/expand.gif) no-repeat 15px 50%; border-bottom:1px solid #979e7d;}
+ul#portfolio-links {
+	list-style:none;
+	margin:0 0 40px 0; padding:0;
+	width:auto;
+	height:auto;}
+#portfolio-links a {
+	cursor:pointer;
+	display:block;
+	padding:4px 0 4px 40px;}
+ul#portfolio-links li {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding:0;
+	line-height:28px;
+	text-transform:uppercase;
+	width:100%;}
+ul#portfolio-links li a:hover {
+	text-decoration:none;
+	color:white;}
+ul#portfolio-links ul {
+	list-style:none;
+	margin:0;
+	padding:0;}
+ul#portfolio-links li li a:link, ul#portfolio-links li li a:visited {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#58595b;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding:7px 0 7px 60px;
+	width:100%;}
+ul#portfolio-links li li:hover {
+	background:url(../images/breadcrumb-back.jpg) top left repeat-y;
+	text-decoration:none;
+	color:#636e43;}
+ul#portfolio-links li.current {
+	color:#636e43;
+	background:url(../images/breadcrumb-back.jpg) top left repeat-y;}
+	
+/* PORTFOLIO AND STONE GALLERY CONTENT */
+/* STONE - Install Thumbs */
+.install_thumbs {
+	width:auto;
+	height:auto;
+	margin:2px 0 0px 40px;
+	padding:0;}
+.install_thumbs a {
+	float:left;
+	margin:5px 10px 5px 0;
+	padding:0;
+	border:1px solid #ccc;
+	width:75px;
+	height:75px;}
+.install_thumbs img {border:1px solid #808285;}
+.install_thumbs img:hover {border:1px solid #dee0d4;}
+#finish_thumbs {margin:0 0 0 20px;}
+
+/* get rid of those system borders being generated for A tags */
+a:active {outline:none;}
+:focus {-moz-outline-style:none;}
+/*	root element for the scrollable.
+	when scrolling occurs this element stays still. */
+.scrollable {
+	position:relative;
+	float:left;
+	overflow:hidden;
+	width: 700px;
+	height:95px;}
+/*	root element for scrollable items. Must be absolutely positioned
+	and it should have an extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element. */
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+	clear:both;}
+.items div {
+	float:left;
+	width:700px;
+	cursor:pointer;}
+.items div a span {
+	margin:2px 0 0 0;
+	display:block;
+	font-size:11px;
+	line-height:11px;
+	color:#414042;
+	text-align:center;}
+/* single scrollable item */
+.scrollable a {
+	float:left;
+	margin:10px 5px;
+	padding:0;
+	border:1px solid #ccc;
+	width:75px;
+	height:75px;}
+.scrollable a.placeholder {
+	width:75px;
+	height:75px;
+	background-color:#979e7d;
+	border:1px solid #ccc;}
+.items img {border:1px solid #808285;}
+.items img:hover {border:1px solid #dee0d4;}
+/* prev and next buttons */
+a.prev, a.next {
+	width:25px;
+	height:75px;
+	float:left;
+	margin:10px 0px;
+	cursor:pointer;}
+/* Next Button */
+a.next 				{background-image:url(../images/next.gif);}
+a.next:hover 		{background-image:url(../images/nextO.gif);}
+/* Previous Button */
+a.prev				{background-image:url(../images/prev.gif);} 
+a.prev:hover  		{background-image:url(../images/prevO.gif);}
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;}
+#enlarge_container {
+	clear:both;
+	width:700px;
+	height:525px;
+	margin:0 0 20px 25px;
+	padding:0;
+	text-align:center;}
+#enlarge_container img {
+	border:1px solid #808285;
+	-moz-box-shadow: 3px 3px 4px #808285;
+	-webkit-box-shadow: 3px 3px 4px #808285;
+	box-shadow: 3px 3px 4px #808285;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#808285')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#808285');}
+
+	
+/* FOOTER */
+#footer {
+	z-index:99;
+	position:relative;
+	height:26px;
+	clear:both;
+	margin:0; padding:0;
+	margin-top:-26px;
+	width:100%;
+	background-color:#2a3332;
+	filter:alpha(opacity=70);
+	 -moz-opacity:0.7;
+	 -khtml-opacity: 0.7;
+	 opacity: 0.7;}
+#footer p, #footer a:link, #footer a:link, #footer a:visited {
+	margin:0; padding:0;
+	display:inline;
+	line-height:26px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#e5e4e5;
+	text-decoration:none;}
+#footer a:hover {
+	color:white;}
+#footer p.placebo {
+	padding:0 10px;
+	float:left;}
+#footer a:hover.placebolink {font-style:italic;}
+#footer p.facebook {padding-left:20px;}
+#footer p.subscribe {padding-left:20px;}
+#footer p.address {padding-right:20px; float:right;}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/}

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function setClass(id, newClass) {
+	identity = document.getElementById(id);
+	identity.className=newClass;
+}
+
+function drop_about () {
+	setClass('drop_aboutnav','dropcontent_on');
+}
+function drop_about_close() {
+	setClass('drop_aboutnav','dropcontent_off');
+}
+function drop_grant() {
+	setClass('drop_grantnav','dropcontent_on');
+}
+function drop_grant_close() {
+	setClass('drop_grantnav','dropcontent_off');
+}
+function drop_ed() {
+	setClass('drop_ednav','dropcontent_on');
+}
+function drop_ed_close() {
+	setClass('drop_ednav','dropcontent_off');
+}
+</script>
+<style type="text/css">
+/* Main Navigation */
+#mainlinks {
+	
+	position:absolute;
+	margin:244px 20px 0 0;
+	padding:0;
+	width:100%;
+	max-width:1600px;
+	height:27px;
+	text-align:right;
+	float:right;}
+#mainlinks div {
+	float:right;
+	width:auto;
+	height:24px;
+	padding:0px;
+	margin:0px;}
+#mainlinks a:link, #mainlinks a:visited {
+	color:#004150;
+	font-size:16px;
+	padding:4px 10px;
+	text-decoration:none;}
+#mainlinks a:hover {
+	text-decoration:none;
+	color:#47510e;}
+/* END */
+
+
+/* Droplinks */
+#drop_about {}
+
+.dropcontent_on {}
+.dropcontent_off {
+	visibility:hidden;
+	width:auto;
+	overflow:hidden;}
+	
+#secondarynav {
+	clear:left;}
+#secondarynav div {
+	padding:6px 0 0 0;
+	margin:0;
+	width:390px;
+	height:22px;}
+
+#secondarynav div div {
+	float:left;
+	width:auto;
+	padding:0px;
+	margin:0px;}
+#secondarynav a:link, #secondarynav a:visited {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#106b80;
+	text-decoration:none;
+	text-align:center;
+	padding:0 8px 0 8px;}
+#secondarynav a:hover {
+	color:#47510e;
+	text-decoration:underline;}
+</style>
+</head>
+
+<body>
+
+<div id="mainlinks">
+        	<div onmouseover="drop_about();" onmouseout="drop_about_close();"><a href="about.html">About Us</a></div>
+            <div onmouseover="drop_grant();" onmouseout="drop_grant_close();"><a href="grants.html">Grants</a></div>
+            <div onmouseover="drop_ed();" onmouseout="drop_ed_close();"><a href="education.html">Education</a></div>
+            <div><a href="travel.html">Travel</a></div>
+          	<div><a href="https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=342060541">Donate</a></div>
+        
+        <div id="secondarynav">
+            <div id="drop_aboutnav" class="dropcontent_off" onmouseover="drop_about();" onmouseout="drop_about_close();">
+                <div><a href="about.html">Overview</a></div>
+              	<div><a href="about-history.html">History</a></div>
+                <div><a href="about-govern.html">Governance</a></div>
+                <div><a href="docs/2008_Form-990.pdf" target="_blank">08 Financials</a></div>
+                <div><a href="contact.html">Contact Us</a></div>
+            </div>
+            <div id="drop_grantnav" onmouseover="drop_grant();" onmouseout="drop_grant_close();" class="dropcontent_off" style="margin:-28px 0 0 400px;">
+            	<div><a href="grants.html">Overview</a></div>
+                <div><a href="grants-2009.html">2009 Grants</a></div>
+                <div><a href="grants-past.html">Past Grants</a></div>
+
+          	</div>
+      		<div id="drop_ednav" onmouseover="drop_ed();" onmouseout="drop_ed_close();" class="dropcontent_off">
+            	<div><a href="education.html">Overview</a></div>
+                <div><a href="ed-pasted.html">Past Programs</a></div>
+                <div><a href="ed-articles.html">Articles</a></div>
+          	</div>
+        </div>
+
+</div>
+
+
+</body>
+</html>

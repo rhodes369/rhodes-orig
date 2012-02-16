@@ -1,0 +1,114 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<!--
+	This is a jQuery Tools standalone demo. Feel free to copy/paste.
+	                                                         
+	http://flowplayer.org/tools/demos/
+	
+	Do *not* reference CSS files and images from flowplayer.org when in production  
+
+	Enjoy!
+-->
+
+<head>
+	<title>jQuery Tools standalone demo</title>
+
+	<!-- include the Tools -->
+
+	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+
+	<style>
+	/* override the root element to enable scrolling */
+	#scroll {		
+	width:305px;
+	height:300px;
+		position:relative;
+		overflow:hidden;
+		clear:both;
+	}
+
+	/* override single pane */
+	#scroll div {
+		float:left;
+		display:block;
+		width:305px;
+		font-size:14px;
+	}
+
+	/* our additional wrapper element for the items */
+	#scroll .items {
+		width:20000em;
+		position:absolute;
+		clear:both;
+		margin:0;
+		padding:0;}
+
+	#scroll .less, #scroll .less a {
+		color:#999 !important;
+		font-size:11px;}
+	
+.items div a span {
+	margin:2px 0 0 0;
+	display:block;
+	font-size:11px;
+	line-height:11px;
+	color:#636466;
+	text-align:center;}
+.items img {border:1px solid #808285;}
+.items img:hover {border:1px solid #dee0d4;}
+	</style>
+</head>
+
+<body>
+
+<!-- panes -->
+<div id="scroll">
+	<!-- wrapper for scrollable items -->
+	<div class="items">
+
+		<div>
+			<a href="#" onMouseover="MM_swapImage('enlarge1','','images/arch/drawings_veneer.gif',0)" onmouseout="MM_swapImage('enlarge1','','images/arch/drawings.gif',0)"><img src="images/arch/veneer.gif" width="300" height="224" alt="" name="a1" /><span>Veneer</span></a>
+		</div>
+        
+		<div>	
+			<a href="#" onMouseover="MM_swapImage('enlarge1','','images/arch/drawings_tempveneer.gif',1)" onmouseout="MM_swapImage('enlarge1','','images/arch/drawings.gif',1)"><img src="images/arch/temp_veneer.gif" width="300" height="229" alt="" name="a1" /><span>Templated veneer</span></a>
+		</div>
+
+		<div>
+			<a href="#" onMouseover="MM_swapImage('enlarge1','','images/arch/drawings_paver.gif',1)" onmouseout="MM_swapImage('enlarge1','','images/arch/drawings.gif',1)"><img src="images/arch/paver.gif" width="300" height="174" alt="" name="a1" /><span>Paver</span></a>
+		</div>
+
+	</div>
+
+</div>
+
+<p style="text-align:center;width:700px">
+	<button class="custom prev">&laquo; Previous</button>
+	<button class="custom next">Next &raquo;</button>
+</p>
+
+<script>
+// wait until document is fully scriptable
+$(function() {
+	// select #flowplanes and make it scrollable. use circular and navigator plugins
+	$("#scroll").scrollable({ circular: true, mousewheel: true }).navigator({
+		// select #flowtabs to be used as navigator
+		navi: "#flowtabs",
+		// select A tags inside the navigator to work as items (not direct children)
+		naviItem: 'a',
+		// assign "current" class name for the active A tag inside navigator
+		activeClass: 'current',
+		// make browser's back button work
+		history: true
+	});
+});
+</script>
+
+</body>
+
+</html>

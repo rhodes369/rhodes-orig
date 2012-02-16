@@ -1,0 +1,17 @@
+/* ADMIN STYLES */
+
+label {
+  display: block;
+  clear: both;
+  margin: 10px 0 4px;
+  font-size: 12px;}
+
+input {
+  margin: 0;
+  padding: 2px 4px;
+  font-size: 12px;}
+
+select {
+  margin: 0;}
+
+input.new {}

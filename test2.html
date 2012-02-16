@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TEST</title>
+<!-- jQuery Library //--><script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+<!-- jQuery thumbnail slider //--><script type='text/javascript' src='http://www.mathachew.com/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<!-- js image swap //--><script src="js/mouseover.js" type="text/javascript"></script>
+<style type="text/css">
+html, body {
+	margin:0; padding:0;
+	height:100%;
+	background-color:#cacebc;}
+#wrapper {
+	margin:0; padding:0;
+	width:auto;
+	height:auto;    
+	min-height:100%;
+	background-color:#cacebc;}
+
+#gallery {
+	width:800px;
+	height:auto;
+	margin:0 auto;
+	position:relative;}
+
+
+/* PORTFOLIO AND STONE GALLERY CONTENT */
+/* STONE - Install Thumbs */
+.install_thumbs {
+	width:auto;
+	height:auto;
+	margin:2px 0 0px 40px;
+	padding:0;}
+.install_thumbs a {
+	float:left;
+	margin:5px 10px 5px 0;
+	padding:0;
+	border:1px solid #ccc;
+	width:75px;
+	height:75px;}
+.install_thumbs img {border:1px solid #808285;}
+.install_thumbs img:hover {border:1px solid #dee0d4;}
+#finish_thumbs {margin:0 0 0 20px;}
+
+/* get rid of those system borders being generated for A tags */
+a:active {outline:none;}
+:focus {-moz-outline-style:none;}
+/*	root element for the scrollable.
+	when scrolling occurs this element stays still. */
+.scrollable {
+	position:relative;
+	float:left;
+	overflow:hidden;
+	width: 700px;
+	height:95px;}
+/*	root element for scrollable items. Must be absolutely positioned
+	and it should have an extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element. */
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+	clear:both;}
+.items div {
+	float:left;
+	width:700px;
+	cursor:pointer;}
+.items div a span {
+	margin:2px 0 0 0;
+	display:block;
+	font-size:11px;
+	line-height:11px;
+	color:#414042;
+	text-align:center;}
+/* single scrollable item */
+.scrollable a {
+	float:left;
+	margin:10px 5px;
+	padding:0;
+	border:1px solid #ccc;
+	width:75px;
+	height:75px;}
+.scrollable a.placeholder {
+	width:75px;
+	height:75px;
+	background-color:#979e7d;
+	border:1px solid #ccc;}
+.items img {border:1px solid #808285;}
+.items img:hover {border:1px solid #dee0d4;}
+/* prev and next buttons */
+a.prev, a.next {
+	width:25px;
+	height:75px;
+	float:left;
+	margin:10px 0px;
+	cursor:pointer;}
+/* Next Button */
+a.next 				{background-image:url(images/next.gif);}
+a.next:hover 		{background-image:url(images/nextO.gif);}
+/* Previous Button */
+a.prev				{background-image:url(images/prev.gif);} 
+a.prev:hover  		{background-image:url(images/prevO.gif);}
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;}
+#enlarge_container {
+	clear:both;
+	width:700px;
+	height:525px;
+	margin:0 0 20px 25px;
+	padding:0;
+	text-align:center;}
+#enlarge_container img {
+	border:1px solid #808285;
+	-moz-box-shadow: 3px 3px 4px #808285;
+	-webkit-box-shadow: 3px 3px 4px #808285;
+	box-shadow: 3px 3px 4px #808285;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#808285')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#808285');}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    
+    <div id="gallery">
+    <!-- "previous page" action -->
+		<a class="prev"></a>
+		<!-- root element for scrollable -->
+		<div class="scrollable">   
+   			<!-- root element for the items -->
+   			<div class="items">
+           	  <!-- 1-8 -->
+              <div>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh3.jpg',0)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh3.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/E006.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/E006.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh5.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh5.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh2.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh2.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh6.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh6.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/DSCN5600.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/DSCN5600.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/32225.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/32225.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/E023.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/E023.jpg" alt="" name="a1" /></a>
+              </div>
+              
+              <!-- 9-15 -->
+              <div>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh7.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh7.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh1.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh1.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/E010.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/E010.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/E036.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/E036.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/E012.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/E012.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/E031.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/E031.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/grates.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/grates.jpg" alt="" name="a1" /></a>
+              	<a href="#" onMouseover="MM_swapImage('enlarge1','','images/Portfolio/westerleigh/westerleigh9.jpg',1)"><img src="images/Portfolio/westerleigh/thumbs/westerleigh9.jpg" alt="" name="a1" /></a>
+              </div>
+   			</div>
+		</div>
+        <!-- "next page" action -->
+        <a class="next"></a>
+        <script>
+		// execute your scripts when the DOM is ready. this is mostly a good habit
+		$(function() {
+			// initialize scrollable
+			$(".scrollable").scrollable();
+		});
+		</script>
+        
+        <div id="enlarge_container"><img src="images/Portfolio/westerleigh/westerleigh3.jpg" name="enlarge1" /></div>
+        
+        <div class="hide">
+        	<img src="images/Portfolio/westerleigh/32225.jpg" />
+			<img src="images/Portfolio/westerleigh/grates.jpg" />
+        	<img src="images/Portfolio/westerleigh/westerleigh1.jpg" />
+   			<img src="images/Portfolio/westerleigh/westerleigh2.jpg" />
+    		<img src="images/Portfolio/westerleigh/westerleigh3.jpg" />
+    		<img src="images/Portfolio/westerleigh/westerleigh5.jpg" />
+    		<img src="images/Portfolio/westerleigh/westerleigh6.jpg" />
+   			<img src="images/Portfolio/westerleigh/westerleigh7.jpg" />
+    		<img src="images/Portfolio/westerleigh/westerleigh9.jpg" />
+    		<img src="images/Portfolio/westerleigh/DSCN5600.jpg" />
+    		<img src="images/Portfolio/westerleigh/E006.jpg" />
+    		<img src="images/Portfolio/westerleigh/E010.jpg" />
+    		<img src="images/Portfolio/westerleigh/E012.jpg" />
+    		<img src="images/Portfolio/westerleigh/E023.jpg" />
+    		<img src="images/Portfolio/westerleigh/E031.jpg" />
+    		<img src="images/Portfolio/westerleigh/E036.jpg" />
+        </div>
+		
+        <div class="description">
+			<p>Built in the grand style of an English country Manor House, this residence sits on a premier acreage in Greenwich, Connecticut.  One of the largest homes in the US built in modern times, the plan of the residence cuts in and out to create private courtyards, gardens and myriad visual surprises.  With 286 separate elevations on the residence, the steady repeat of the stone vernacular successfully belies the complexity of the architectural form.</p>
+<p>More than 200 containers of both antique and hand-crafted stone material (3400 pallets) form the stone veneer and hardscape. The drawing set for the stone detailing exceeded 350 full-sized sheets. The stone design and detailing were entirely the product of Rhodes Architectural Stone.</p>
+<p>The project features Antique Yangtze Limestone, recycled from the rising tide of the Three Gorges Dam Project in China.  The dimensional stone pieces were hand- fabricated and hand-textured from freshly quarried New Yangtze Limestone; the modern source quarry for the antique recycled material.  When this material is processed using the RAS - 12th century hand-finish, it blends perfectly with the antique material, creating a seamless visual pallet.</p>
+        </div>
+        
+        </div>
+    
+
+    
+</div><!-- Close Wrapper //-->
+ 
+</body>
+</html>

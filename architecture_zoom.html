@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rhodes Architectural Stone - Architecture</title>
+<!-- Jquery Library --><script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+<!-- Jquery Zoom plugin --><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<!-- Jquery Zoom plugin --><script type="text/javascript" src="js/ddpowerzoomer.js"></script>
+<!-- Jquery Zoom plugin -->
+<script type="text/javascript">
+jQuery(document).ready(function($){ //fire on DOM ready
+	$('img.zoom').addpowerzoom({
+		defaultpower: 2,
+		powerrange: [2,5],
+		largeimage: "http://www.rhodes.org/test/images/arch/drawings_zoom.gif",
+		magnifiersize: [200,200] //<--no comma following last option!
+	})
+})
+</script>
+<link href="styles/core.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#content-left {
+	margin:0px 0px 10px 0px;
+	width:335px;} 
+#content-right {
+	margin:10px 10px 10px 0;
+	width:850px;}
+
+#enlarge_container {
+	width:765px;
+	height:600px;}
+	
+/* Single pane scroll for Architecture page */
+#scroll {
+	margin:0 0 0 40px;	
+	width:305px;
+	height:320px;
+	position:relative;
+	overflow:hidden;
+	clear:both;}
+#scroll div {
+	float:left;
+	display:block;
+	width:305px;
+	font-size:14px;}
+#scroll .items {
+	width:20000em;
+	position:absolute;
+	clear:both;
+	margin:0;
+	padding:0;}
+#scroll .less, #scroll .less a {
+	color:#999 !important;
+	font-size:11px;}
+.items div a span {
+	margin:8px 0 0 0;
+	display:block;
+	font-size:12px;
+	line-height:14px;
+	text-transform:uppercase;
+	color:#636466;
+	text-align:center;}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="head">
+		
+        <h1 id="logo"><a href="index.html"><span></span>Rhodes.org</a></h1>
+        
+        <div id="tag">
+            <p>Architectural stone, blending 12th century<br /> hand applied finishes, with modern stone fabrication.</p>
+        </div>
+        
+    	<ul id="links" class="sf-menu">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a>
+                <ul>
+                    <li><a href="about.html#who">Who We Are</a></li>
+                    <li><a href="about.html#what">What We Do</a></li>
+                    <li><a href="about.html#how">How We Work</a></li>
+                    <li><a href="about.html#why">Why Rhodes</a></li>
+                    <li><a href="about.html#bios">Bios</a></li>
+                </ul>
+            </li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="portfolio.html">Portfolio</a>
+                <ul>
+                    <li><a href="portfolio_residential.html">Residential</a></li>
+                    <li><a href="portfolio_commercial.html">Commercial</a></li>
+                    <li><a href="portfolio_fireplaces.html">Fireplaces</a></li>
+                    <li><a href="portfolio_baths.html">Bathrooms</a></li>
+                    <li><a href="portfolio_pools.html">Pools</a></li>
+                </ul>
+            </li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="stone.html">Stone</a>
+                <ul>
+                    <li><a href="stone.html#Material">Material</a></li>
+                    <li><a href="stone.html#Firebrick">Firebrick</a></li>
+                </ul>
+            </li>
+        </ul><!-- Close Links //-->
+    </div><!-- Close Head //-->
+        
+    <ul id="breadcrumb">
+    	<li><i>Navigation: </i></li>
+    	<li><a href="index.html">Home</a> / </li>
+        <li>Architecture / </li>
+        <li>Architectural drawing</li>
+    </ul>
+    
+    <div id="content-left">
+    	<h1>Architecture</h1>
+        <p><strong><i>mouse-over</i></strong> the architectural drawing to zoom in on the drawing AND with a <strong><i>mouse wheel</i></strong>, you may use the wheel to zoom.</p>
+
+
+  </div><!-- Close Content-left //-->
+    
+	<div id="content-right">
+        <div id="enlarge_container"><img class="zoom" src="images/arch/drawings.gif" name="enlarge1" /></div>    
+  	</div><!-- Close Content-right //-->       
+    
+</div><!-- Close Wrapper //-->
+
+<!-- FOOTER //-->
+<div id="footer">
+	<p class="placebo">A <a class="placebolink" href="http://www.placeboarts.com/design">PlaceboArts</a> Effect</p>
+	<p class="subscribe"><a href="#">Subscribe to our E-Newsletter</a></p>
+    <p class="address">Rhodes Architectural Stone  |  55 Bell Street, Suite 100  |  Seattle, WA 98121  |  Ph  206.709.3000  |  F  206.709.3004</p>
+</div>
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+<!-- CLOSE FOOTER //-->
+
+
+</body>
+</html>

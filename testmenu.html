@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type='text/javascript' src='http://www.mathachew.com/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<style type="text/css">
+.example_menu {
+	font-size: 90%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	width: 136px;
+}
+.expand_all,
+.collapse_all {
+        cursor: pointer;
+}
+.example_menu ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#portfolio-links li, #menu2 li, #menu3 li, #menu4 li, #menu5 li, .example_menu li {
+	background-image: none;
+	margin: 0;
+	padding: 0;
+}
+.example_menu ul ul {
+	display: block;
+}
+.example_menu ul ul li a {
+	padding-left: 20px;
+	width: 109px;
+}
+.example_menu a {
+	color: #000;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	margin-left: 0;
+	padding: 2px 2px 2px 17px;
+	width: 112px;
+}
+.example_menu a.expanded {
+	background: #bbb url('images/collapse.gif') no-repeat 3px 50%;
+}
+.example_menu a.collapsed {
+	background: #bbb url('images/expand.gif') no-repeat 3px 50%;
+}
+.example_menu a:hover {
+	text-decoration: none;
+}
+.example_menu ul a {
+	background: #e8e8e8;
+	border-top: 2px solid #fff;
+	color: #000;
+	display: block;
+	font-weight: normal;
+	padding: 2px 2px 2px 10px;
+	width: 119px;
+}
+.example_menu ul a:link {
+	font-weight: normal;
+}
+.example_menu ul a:hover {
+	background : #f5f5f5;
+	text-decoration: underline;
+}
+.example_menu li.active a {
+	background: #fff;
+}
+.example_menu li.active li a {
+	background: #e8e8e8;
+}
+#portfolio-links li.footer, #menu2 li.footer, #menu3 li.footer, #menu4 li.footer, #menu5 li.footer, .example_menu .footer {
+	background: transparent url('images/footer.jpg') no-repeat 0 0;
+	border-top: 2px solid #fff;
+	height: 9px;
+	line-height: 15px;
+	margin: 0 0 10px 0;
+	width: 131px;
+}
+.example_menu .footer span {
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+<!--
+var $j = jQuery.noConflict();
+$j(document).ready(function() {
+	setTimeout(function() {
+		// Slide
+		$j('#portfolio-links > li > a.expanded + ul').slideToggle('medium');
+		$j('#portfolio-links > li > a').click(function() {
+			$j(this).toggleClass('expanded').toggleClass('collapsed').find('+ ul').slideToggle('medium');
+		});
+		$j('#example1 .expand_all').click(function() {
+			$j('#menu1 > li > a.collapsed').addClass('expanded').removeClass('collapsed').find('+ ul').slideDown('medium');
+		});
+		$j('#example1 .collapse_all').click(function() {
+			$j('#portfolio-links > li > a.expanded').addClass('collapsed').removeClass('expanded').find('+ ul').slideUp('medium');
+		});
+		
+	}, 250);
+});
+//--></script>
+
+<h4>Slide <a class="expand_all"><img src="/wp-content/uploads/2010/06/expand.gif" alt="" /></a> <a class="collapse_all"><img src="/wp-content/uploads/2010/06/collapse.gif" alt="" /></a></h4>
+
+<ul id="portfolio-links" class="example_menu">
+
+<li><a class="expanded">Section A</a>
+<ul>
+<li><a href="#">Link A-A</a>
+<ul>
+<li><a href="#">Link A-A-A</a></li>
+<li><a href="#">Link A-A-B</a></li>
+</ul>
+</li>
+<li class="active"><a href="#">Link A-B</a></li>
+<li><a href="#">Link A-C</a></li>
+<li><a href="#">Link A-D</a></li>
+
+</ul>
+</li>
+<li class="footer"><span> </span></li>
+<li><a class="collapsed">Section B</a>
+<ul>
+<li><a href="#">Link B-A</a>
+<ul>
+<li><a href="#">Link B-A-A</a></li>
+<li><a href="#">Link B-A-B</a></li>
+<li><a href="#">Link B-A-C</a></li>
+</ul>
+
+</li>
+<li><a href="#">Link B-B</a>
+<ul>
+<li><a href="#">Link B-B-A</a></li>
+<li><a href="#">Link B-B-B</a></li>
+</ul>
+</li>
+<li><a href="#">Link B-C</a></li>
+<li><a href="#">Link B-D</a></li>
+</ul>
+</li>
+<li class="footer"><span> </span></li>
+
+<li><a class="collapsed">Section C</a>
+<ul>
+<li><a href="#">Link C-A</a></li>
+<li><a href="#">Link C-B</a></li>
+<li><a href="#">Link C-C</a></li>
+<li><a href="#">Link C-D</a></li>
+</ul>
+</li>
+<li class="footer"><span> </span></li>
+</ul>
+
+
+<p><br style="clear: both;" /></p>
+</body>
+</html>

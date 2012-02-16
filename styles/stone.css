@@ -1,0 +1,27 @@
+/* STONE STYLES CONFLICTING WITH PORTFOLIO */
+
+/* DETAILS */
+#content-left h1 {margin: 0px 0 6px 0px;} 
+#content-left p, .description p {
+	margin:2px 0 16px 0px;
+	padding: 0 0 0 0px;
+	color:#414042;
+	line-height:16px;
+	font-size:11px;}
+.description p {font-size:11px;}
+.details, .description {	
+	clear:both;
+	margin:0;
+	width:auto;
+	padding:20px 0 0 0;}
+
+/* STONE GALLERY CONTENT */
+.scrollable {height:125px;}
+.items div {margin:4px 0 0 0;}
+
+/* single scrollable item */
+.scrollable a {
+	margin:0 5px 5px 5px;
+	height:95px;
+	text-decoration:none;
+	text-align:center;}

@@ -1,0 +1,684 @@
+@charset "utf-8";
+/* CORE STYLES */
+
+
+@font-face {
+    font-family: 'LucidaSans';
+    src: url('../fonts/LucidaSans/lucidasansstd-webfont.eot');
+    src: url('../fonts/LucidaSans/lucidasansstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LucidaSans/lucidasansstd-webfont.woff') format('woff'),
+         url('../fonts/LucidaSans/lucidasansstd-webfont.ttf') format('truetype'),
+         url('../fonts/LucidaSans/lucidasansstd-webfont.svg#LucidaSansStdRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+  margin:0; padding:0;
+  height:100%;
+  background-color:#e0e0dc;
+  font-family: "LucidaSans", Verdana, Helvetica, sans-serif;}
+
+#outer {
+  position: absolute;
+  margin: 0; padding: 0;
+  width: 100%;
+  height: auto;}
+
+#header_back {
+  position: relative;
+  margin: 0; padding: 0;
+  width: 100%;
+  height: 148px;
+  background: #fff;
+  background: rgba(250,250,250,0.9);}
+
+#links_back {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #676767;
+  background-color: rgba(0,0,0,0.7);}
+
+#wrapper {
+  margin: 0 auto; 
+  padding: 0 0 60px;
+  width: auto;
+  max-width: 1200px;
+  height:auto;    
+  min-height:100%;
+  background-color:#e0e0dc; /*
+  -moz-box-shadow: 10px 0px 12px #6d6e71;
+  -webkit-box-shadow: 10px 0px 12px #6d6e71;
+  box-shadow: 10px 0px 12px #6d6e71;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#6d6e71')";/* For IE 8 
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#6d6e71');/* For IE 5.5 - 7 */}
+
+/* TYPE */
+h1, h1 a:link, h1 a:visited, h1 a:hover {
+  margin: 0 0 16px;
+  font-family: Times, serif;
+  font-size: 26px;
+  font-weight:normal;
+  text-decoration:none;
+  letter-spacing: 2px;
+  color: #414042;
+  /* Fix inconsistency in Chrome */
+  height: 28px;
+  line-height: 24px;}
+
+h1 a:hover {color: #252525;}
+
+h2, h3, h4, p, tr {
+  color:#414042;}
+
+h2 {
+  margin:8px 0 4px 0;
+  font-size:18px;
+  font-weight:normal;
+  text-transform:uppercase;
+  letter-spacing:4;}
+
+h3 {
+  margin:8px 0 4px 0;
+  font-size:14px;
+  font-weight:bold;}
+
+p {
+  margin:2px 0 16px 0;
+  font-size:12px;
+  line-height:18px;}
+
+a:link, a:visited {
+  font-family: "LucidaSans", Verdana, Helvetica, sans-serif;
+  font-size:12px;
+  text-decoration:underline;
+  color: #7C3113;}
+
+a:hover {
+  text-decoration:none;
+  color: #252525;}
+
+tr {
+  font-size:12px;
+  text-align:center;}
+
+
+/* CLASSES */
+.caps {text-transform:uppercase;}
+.bold {font-weight:bold;}
+.indent {margin-left:20px; display:block;}
+.indentLinks {margin-left:12px;}
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+img.left {margin:2px 20px 10px 0; border:1px solid #414042;}
+img.right {margin:2px 0px 10px 20px; border:1px solid #414042;}
+.hide {display:none;}
+.top {margin-left:80px; font-style:italic; font-weight: bold;}
+.list {
+  margin:0 0 10px 10px;
+  padding:0;
+  list-style:none;}
+.list li {
+  color:#414042;
+  font-size:11px;
+  text-transform:uppercase;
+  line-height:16px;
+  padding:4px 0;
+  margin:4px 10px;}
+
+
+/* HEADER */
+#header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 148px;
+  width: 100%;}
+
+/* LOGO LINK */
+h1#logo {
+  position: absolute;
+  top: 26px;
+  left: 1px;
+  margin: 0;
+  padding: 0;
+  width: 223px;
+  height: 77px;}
+
+#logo span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 223px;
+  height: 77px;
+  margin: 0; 
+  padding: 0; 
+  background: url(../images/logo-stacked-tag.png) no-repeat center transparent;}
+
+#logo a {
+  color: transparent;}
+
+/* NEWS */
+#news {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  margin: 0 4px 0 0;
+  height: auto;
+  text-align: right;
+  color: #636363;}
+
+#news a:link, #news a:visited {
+  font-size: .9em;
+  margin: 0;
+  padding: 4px 12px;
+  color: #7c3113;
+  text-decoration: none;}
+
+#news a:hover, #news a.current {
+  color: #636363;
+  text-decoration: none;}
+
+/* LINKS */
+ul#links {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  margin: 0 7px 0 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  list-style: none;}
+
+ul#links li {
+  text-align:center;
+  float:right;
+  position:relative; /* Important! Without this the lists will be positioned to the page, not it's parent. */
+  padding:0;
+  width:auto;
+  line-height: 29px;
+  background: transparent;}
+
+ul#links li.current, ul#links li.nolink {
+  line-height: 18px;}
+
+ul#links li a:link, ul#links li a:visited, ul#links li.current, ul#links li.nolink {
+  font-size: 14px;
+  color:#e5e4e5;
+  text-transform:uppercase;
+  text-decoration:none;
+  width: auto;
+  padding: 6px 20px;
+  height: 18px;
+  background: transparent;}
+
+ul#links li:hover, ul#links li a:hover, ul#links a:link.current, ul#links a:visited.current, ul#links li.current, ul#links li.nolink:hover {
+  color: #222;
+  background-color: #ccc;}
+
+/* ul#links li:hover > a and ul#links li:hover above makes the first child nav link stay highlited when mousing down to second children */
+ul#links li:hover > a {
+  color: #222;}
+
+/* DROPDOWNS */
+ul#links li ul {
+  display:none;
+  list-style:none;
+  position:absolute; 
+  top:1em;
+  left:0;
+  width:150px;
+  margin:0;
+  padding:0;
+  z-index: 100;
+  background-color: #333;
+  -moz-box-shadow:    0px 4px 8px #222;
+  -webkit-box-shadow: 0px 4px 8px #222;
+  box-shadow:         0px 4px 8px #222;
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=90, Color='#222')";
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=90, Color='#222');}
+
+/* Fix all browsers but IE (...says suckerfish tutorial, advising auto on both elements, yet that broke IE7) */
+ul#links li > ul {top:30px; left:0;}
+
+ul#links li:hover ul, ul#links li.over ul {display:block;}
+
+ul#links li ul li {
+  margin:0;
+  padding:0;
+  text-align:left;
+  float:none;}
+
+ul#links ul li a:link, ul#links ul li a:visited {
+  width:110px;
+  display:inline-block;
+  padding:4px 20px;}
+
+ul#links ul li a:hover {
+  color: #222;
+  background-color: #ccc;}
+
+
+/* ANCHOR LINKS */
+ul#anchors {
+  list-style:none;
+  margin: 14px 0 0; padding:0;}
+
+ul#anchors li {
+  margin:0; padding:0;
+  display:inline;}
+
+ul#anchors li, ul#anchors li a:link, ul#anchors li a:visited {
+  font-size: .9em;
+  font-style:italic;
+  text-transform:uppercase;
+  color:#636466;}
+
+ul#anchors li a:link, ul#anchors li a:visited {
+  padding:4px 10px;}
+
+ul#anchors li a:hover {
+  text-decoration:none;
+  color:#414042;}
+
+
+/* CONTENT */
+
+#content-copy {
+  margin: 20px;
+  padding:0;
+  width:auto;
+  height:auto;
+  padding-bottom:26px;
+  overflow:hidden;}
+
+
+/* CONTENT COLUMNS */
+#right-back {
+  float: left;
+  position: relative;
+  width: 100%;
+  overflow: hidden;}
+#center-back {
+  float: left;
+  position: relative;
+  right: 548px;}
+#center-back.TwoColumnFix {
+  width: auto;}
+#left-back {
+  float: left;
+  position: relative;
+  right: 420px;
+  background: #f0f0ee;}
+
+#content-left, #content-center, #content-right {
+  float: left;
+  position: relative;
+  height:auto;
+  padding: 0;
+  overflow:hidden;}
+#content-left {
+  left: 968px;
+  margin: 0;
+  padding: 45px 10px 20px 30px;
+  width: 185px;}
+#content-center {
+  left: 968px;
+  margin: 0;
+  padding: 76px 30px 30px;
+  width: 330px;}
+#content-center.TwoColumnFix {
+  left: 975px;
+  width: 915px;}
+#content-right {
+  left: 974px;
+  margin: 35px auto 0;
+  width: 578px;}
+
+
+/* PORTFOLIO AND STONE DETAILS  +  ABOUT, CONTACT AND SUSTAINABILITY CONTENT */
+#content-left h1, #content-center h1 {margin: 0 0 0 0px;}
+#content-left h2, #content-center h2 {margin:4px 0 16px 0px;}
+#content-left h3, #content-center h3, #content-copy h3, .description h3 {
+	margin: 14px 0 8px 0px;
+	padding: 0;
+	font-weight: bold;
+	font-size: .9em;
+	text-transform: uppercase;
+	color: #252525;}
+#content-copy h3 {padding-left: 0px; font-size:13px; letter-spacing:2px; font-weight: bold;}
+#content-left h4, #content-center h4 {margin:2px 0 2px 0px;}
+#content-left h4, #content-center h4, #content-right h4 {
+	font-size:14px;
+	font-weight:normal;}
+#content-right h4 {margin:0 0 2px 5px; padding:0;}
+#content-left p, #content-center p {
+	margin: 2px 0 16px 0px;
+	padding: 0;
+	color: #252525;
+	line-height: 1.3em;
+	font-size: .9em;}
+.description p {
+	margin:2px 0 16px 25px;
+	padding:0;
+	font-size: .9em;
+	color: #252525;
+	line-height: 1.3em;}
+.details {margin:20px 0 0 0;}
+#content-center .details p {
+	margin: 2px 0 8px 0;}
+.description {
+	clear:both;}
+#content-center a {
+  line-height: 1.3em;
+  font-size: .9em;}
+
+/* CONTAINER FOR STONE FINISH TEXT */
+#finish {
+  margin: 0 0 16px;
+  padding: 0;
+  font-size: .9em;
+  color: #252525;
+  line-height: 1.3em;}
+
+/* STONE THUMBS */
+.stone_thumbs {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  width: auto;
+  height: auto;}
+
+.stone_thumbs li {
+  float: left;
+  margin: 0 28px 28px 0;
+  padding: 0;
+  width: 152px;
+  height: 210px;}
+
+.stone_thumbs li:hover {
+  box-shadow:         0 0 10px #686868;
+  -moz-box-shadow:    0 0 10px #686868;
+  -webkit-box-shadow: 0 0 10px #686868;
+  -o-box-shadow:      0 0 10px #686868;}
+
+.stone_thumbs li:hover img {
+  box-shadow:         0 0 2px #000;
+  -moz-box-shadow:    0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+  -o-box-shadow:      0 0 2px #000;}
+
+.stone_thumbs a {
+  display: block;
+  margin: 0;
+  padding: 4px;
+  width: 144px;
+  height: 202px;
+  text-decoration: none;
+  background: #f0f0ee;}
+
+.stone_thumbs a:hover, .stone_thumbs a:hover span {
+  text-decoration: none;
+  background: #686868;
+  color: white;
+  text-shadow: 1px 1px 0 #000;}
+
+.stone_thumbs .material {
+  display: block;
+  margin: 10px 0 0 10px;}
+
+.stone_thumbs .type {
+  display: block;
+  margin-left: 10px;
+  color: #252525;}
+
+.stone_thumbs img {
+  width: 144px;
+  height: 144px;
+  border: none;}
+
+
+/* ABOUT PAGE PHOTOS */	
+#mockups, #inspection {
+	float:right;
+	width:300px;
+	height:auto;
+	margin:2px 0px 10px 20px;
+	padding:0;
+	clear:both;
+	position:relative;
+	display:block;}
+#mockups img, #inspection img {border:1px solid #414042;}
+.caption {
+	padding:0;
+	margin:0 0 0 1px;
+	position:absolute;
+	left:0;
+	bottom:10px;
+  height:40px;
+	width:300px;
+	background-color: rgba(0,0,0,.5);
+	opacity:50;
+	filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000);}
+.caption a:link, .caption a:visited {
+	font-size: .9em; 
+	color:#f5f5f4;
+	margin:0; 
+	padding:10px 0 0 0;
+	width:100%;
+	height:30px;
+	display:block;
+	text-decoration:none;
+	text-align:center;}
+.caption a:hover {
+	color:white;
+	background-color: rgba(0,0,0,1);
+	opacity:100;
+	filter:alpha(opacity=100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aa000000,endColorstr=#aa000000);}
+
+
+/* PORTFOLIO + STONE NAVIGATION */
+.expanded, .collapsed, .nolist {color:#979e7d;}
+.current, .current a {
+	color: #252525;}
+ul#portfolio-links, ul#stone-links {
+	list-style:none;
+	margin: 12px 0 40px;
+	padding:0;
+	width:auto;
+	height:auto;}
+ul#portfolio-links li, ul#stone-links li {
+	font-size: 14px;
+	padding:0;
+	line-height: 22px;}
+ul#portfolio-links a, ul#stone-links li a {
+	font-size: 14px;
+	cursor:pointer;
+	text-decoration:none;
+	display:block;
+	padding: 2px 0;}
+ul#portfolio-links li a:link.nolist, ul#portfolio-links li a:visited.nolist, ul#stone-links li a:link.nolist, ul#stone-links li a:visited.nolist  {
+	font-size: 14px;
+	text-decoration:none;
+	border-bottom:1px solid #979e7d;
+	color: #7C3113;}
+ul#portfolio-links li a:hover, ul#portfolio-links li a:hover.nolist, ul#stone-links li a:hover, ul#stone-links li a:hover.nolist {
+	text-decoration:none;
+	color: #252525;}
+/* 2ND TIER - STONE */
+ ul#stone-links ul {
+  list-style:none;
+  margin: 0 0 0 12px;
+  padding: 0;}
+
+
+/* PORTFOLIO AND STONE GALLERY CONTENT */
+/* STONE - Install Thumbs */
+/*.install_thumbs {
+  width:auto;
+  height:auto;
+  margin: 2px 0 0px 0px;
+  padding:0;}
+.install_thumbs a {
+  float:left;
+  margin:5px 10px 5px 0;
+  padding:0;
+  border:1px solid #ccc;
+  width:75px;
+  height:75px;}
+.install_thumbs img {border:1px solid #808285;}
+.install_thumbs img:hover {border:1px solid #dee0d4;}
+#finish_thumbs {margin:0 0 0 20px;}*/
+
+/* get rid of those system borders being generated for A tags */
+a:active {outline:none;}
+:focus {-moz-outline-style:none;}
+/*	root element for the scrollable.
+	when scrolling occurs this element stays still. */
+.scrollable {
+	position:relative;
+	float:left;
+	overflow:hidden;
+	width: 530px;
+	height: 116px;
+	margin: 0 0 0 4px;}
+/*	root element for scrollable items. Must be absolutely positioned
+	and it should have an extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element. */
+.scrollable .items {
+	width:20000em;
+	position:absolute;
+	clear:both;}
+.items div {
+	float:left;
+	width: 535px;
+	cursor:pointer;}
+.items div a span {
+	margin:2px 0 0 0;
+	display:block;
+	font-size:11px;
+	line-height:11px;
+	color:#414042;
+	text-align:center;}
+
+/* single scrollable item */
+.scrollable a {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 10px 10px 10px 0;
+  padding: 0;
+  border: 1px solid #afafae;
+  width: 95px;
+  height: 95px;
+  filter: alpha(50);
+  -moz-opacity:     .50;
+  -khtml-opacity:   .50;
+  -webkit-opacity:  .50;
+  opacity:          .50;
+}
+.scrollable a:hover {
+  filter: alpha(100);
+  -moz-opacity:     1;
+  -khtml-opacity:   1;
+  -webkit-opacity:  1;
+  opacity:          1;
+}
+.scrollable a:hover .thumbLabel {
+  filter: alpha(100);
+  -moz-opacity:     1;
+  -khtml-opacity:   1;
+  -webkit-opacity:  1;
+  opacity:          1;
+}
+
+.items img {
+  border: none;
+  /* CHANGE THESE WHEN IMGS ARE INSERTED */
+  width: 95px;
+  height: 95px;}
+
+/* prev and next buttons */
+a.prev, a.next {
+	width:22px;
+	height:63px;
+	float:left;
+	margin: 28px 0px 0;
+	cursor:pointer;}
+/* Next Button */
+a.next 				{background-image:url(../images/next.gif);}
+a.next:hover 		{background-image:url(../images/nextO.gif);}
+/* Previous Button */
+a.prev				{background-image:url(../images/prev.gif);} 
+a.prev:hover  		{background-image:url(../images/prevO.gif);}
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;}
+#enlarge_container {
+	clear:both;
+	width: 527px;
+	height: 527px;
+	margin: 0 0 20px 25px;
+	padding:0;
+	text-align:center;
+	overflow: hidden;}
+#enlarge_container img {
+	margin: 0;
+	border: 1px solid #acacac;}
+
+	
+/* FOOTER */
+#footer {
+	z-index:99;
+	position:relative;
+	height:42px;
+	clear:both;
+	margin:0; padding:0;
+	margin-top:-42px;
+	width:100%;
+	background-color: #2a3332;
+	background-color: rgba(0,0,0,0.2)
+}
+#footer p, #footer a:link, #footer a:link, #footer a:visited {
+	margin:0; padding:0;
+	display:inline;
+	line-height:42px;
+	font-size:.9em;
+	color:#e5e4e5;
+	text-decoration:none;}
+#footer a:hover {
+	color:white;}
+#footer p.placebo {
+	padding:0 10px;
+	float:left;}
+#footer a:hover.placebolink {font-style:italic;}
+#footer p.facebook, #footer p.copyright, #footer p.subscribe {padding-left:20px;}
+#footer p.address {padding:0 20px 0 180px;}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/}
+
+
+/* CSS Resets for webkit */
+h1, h3, ul, li, a, p {
+	-webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;}
